@@ -48,7 +48,7 @@ python inference.py --model_path checkpoints/best_model.pth --data_root ./data
 
 Result
 ==
-![image](https://github.com/skyknights/MLDCGAN/blob/main/F5.png)
+![image](https://github.com/skyknights/MLDCGAN/blob/main/%E5%9B%BE%E7%89%875.png)
 
 
 Acknowledgments
