@@ -17,6 +17,15 @@ python inference.py --model_path checkpoints/best_model.pth --single_inference \
 * Batch inference\
 python inference.py --model_path checkpoints/best_model.pth --data_root ./data
 
+Installation
+==
+Python 3.7.13 and Pytorch 1.10.0 are used in this implementation.\
+It is recommended to create conda env from our provided environment.yml:\
+conda env create -f environment.yml\
+conda activate ldgan\
+Or you can install neccessary libraries as follows:\
+pip install -r requirements.txt
+
 Data preparation
 ==
 data/\
