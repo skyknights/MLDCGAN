@@ -7,27 +7,6 @@ Magnetic resonance imaging (MRI) offers significant advantages in soft tissue co
 ![image](https://github.com/skyknights/MLDCGAN/blob/main/F2.png)
 ![image](https://github.com/skyknights/MLDCGAN/blob/main/F3.png)
 ![image](https://github.com/skyknights/MLDCGAN/blob/main/F4.png)
-How to run
-==
-* Train model\
-python train.py --data_root ./data --batch_size 8 --num_epochs 200
-* Evaluate model\
-python evaluate.py --model_path checkpoints/best_model.pth --data_root ./data
-
-* Single reasoning\
-python inference.py --model_path checkpoints/best_model.pth --single_inference \
-    --t1w_path path/to/T1W.nii --t2w_path path/to/T2W.nii --mask_path path/to/mask.nii
-* Batch inference\
-python inference.py --model_path checkpoints/best_model.pth --data_root ./data
-
-Installation
-==
-Python 3.7.13 and Pytorch 1.10.0 are used in this implementation.\
-It is recommended to create conda env from our provided environment.yml:\
-conda env create -f environment.yml\
-conda activate ldgan\
-Or you can install neccessary libraries as follows:\
-pip install -r requirements.txt
 
 Data preparation
 ==
@@ -42,6 +21,34 @@ data/\
 │       └── ...\
 └── test/\
     └── ...
+
+
+
+Installation
+==
+Python 3.7.13 and Pytorch 1.10.0 are used in this implementation.\
+It is recommended to create conda env from our provided environment.yml:\
+conda env create -f environment.yml\
+conda activate ldgan\
+Or you can install neccessary libraries as follows:\
+pip install -r requirements.txt
+
+How to run
+==
+* Train model\
+python train.py --data_root ./data --batch_size 8 --num_epochs 200
+* Evaluate model\
+python evaluate.py --model_path checkpoints/best_model.pth --data_root ./data
+
+* Single reasoning\
+python inference.py --model_path checkpoints/best_model.pth --single_inference \
+    --t1w_path path/to/T1W.nii --t2w_path path/to/T2W.nii --mask_path path/to/mask.nii
+* Batch inference\
+python inference.py --model_path checkpoints/best_model.pth --data_root ./data
+
+Result
+==
+![image](https://github.com/skyknights/MLDCGAN/blob/main/F5.png)
 
 
 Acknowledgments
