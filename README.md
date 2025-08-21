@@ -37,10 +37,12 @@ How to run
 ==
 * Train model\
 python train.py --data_root ./data --batch_size 8 --num_epochs 200
+
 * Evaluate model\
 python evaluate.py --model_path checkpoints/best_model.pth --data_root ./data
 
 * Single reasoning\
+
 python inference.py --model_path checkpoints/best_model.pth --single_inference \
     --t1w_path path/to/T1W.nii --t2w_path path/to/T2W.nii --mask_path path/to/mask.nii
 * Batch inference\
@@ -58,3 +60,16 @@ Thanks to Xiao et al for releasing their official implementation of the DDGAN pa
 Contacts
 ==
 If you have any problems, please open an issue in this repository or ping an email to caoning@hhu.edu.cn.
+
+License
+==
+Please check the LICENSE file. MLDCGAN may be used non-commercially, meaning for research or evaluation purposes only. For business inquiries, please contact caoning@hhu.edu.cn.
+
+Bibtex
+==
+Cite our paper using the following bibtex item:
+```python
+{"title={A Multimodal Latent Diffusion Conditioned GAN Model for Accelerated and High-Fidelity MRI-CT Synthesis in Radiotherapy Planning},
+author={Can Hu, Chunchao Xia, Chuanbing Wang, Xiayu Hang, Xiuhan Li, Han Zhou, Ning Cao1},
+booktitle={Knowledge-Based Systems},
+year={2025}}"
