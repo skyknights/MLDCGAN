@@ -70,6 +70,6 @@ Bibtex
 Cite our paper using the following bibtex item:
 ```python
 {"title={A Multimodal Latent Diffusion Conditioned GAN Model for Accelerated and High-Fidelity MRI-CT Synthesis in Radiotherapy Planning},
-author={Can Hu, Chunchao Xia, Chuanbing Wang, Xiayu Hang, Xiuhan Li, Han Zhou, Ning Cao1},
+author={Can Hu, Chunchao Xia, Chuanbing Wang, Xiayu Hang, Xiuhan Li, Han Zhou, Ning Cao},
 booktitle={Knowledge-Based Systems},
 year={2025}}"
